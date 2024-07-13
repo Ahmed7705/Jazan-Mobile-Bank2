@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NotificationActivity"
+    tools:showIn="@layout/activity_notification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            style="@style/headerText"
+            android:layout_marginBottom="20dp"
+            android:text="Notifications"
+            android:textColor="@color/whiteTextColor" />
+
+        <!-- Example Notification Item 1 -->
+        <RelativeLayout style="@style/notificationDetailsLayout">
+
+            <ImageView
+                android:id="@+id/notificationIcon1"
+                style="@style/notificationDetailsImage"
+                android:src="@drawable/nav" />
+
+            <TextView
+                android:id="@+id/notificationTitle1"
+                android:text="New Message"
+                android:layout_toRightOf="@id/notificationIcon1"
+                style="@style/notificationDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/notificationTime1"
+                android:text="2 hours ago"
+                android:layout_below="@id/notificationTitle1"
+                android:layout_toRightOf="@id/notificationIcon1"
+                style="@style/notificationDetailsMiniText" />
+        </RelativeLayout>
+
+        <View style="@style/notificationDetailsView" />
+
+        <!-- Example Notification Item 2 -->
+        <RelativeLayout style="@style/notificationDetailsLayout">
+
+            <ImageView
+                android:id="@+id/notificationIcon2"
+                style="@style/notificationDetailsImage"
+                android:src="@drawable/nav" />
+
+            <TextView
+                android:id="@+id/notificationTitle2"
+                android:text="New Message"
+                android:layout_toRightOf="@id/notificationIcon2"
+                style="@style/notificationDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/notificationTime2"
+                android:text="3 hours ago"
+                android:layout_below="@id/notificationTitle2"
+                android:layout_toRightOf="@id/notificationIcon2"
+                style="@style/notificationDetailsMiniText" />
+        </RelativeLayout>
+
+        <View style="@style/notificationDetailsView" />
+
+        <!-- Example Notification Item 3 -->
+        <RelativeLayout style="@style/notificationDetailsLayout">
+
+            <ImageView
+                android:id="@+id/notificationIcon3"
+                style="@style/notificationDetailsImage"
+                android:src="@drawable/nav" />
+
+            <TextView
+                android:id="@+id/notificationTitle3"
+                android:text="New Message"
+                android:layout_toRightOf="@id/notificationIcon3"
+                style="@style/notificationDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/notificationTime3"
+                android:text="4 hours ago"
+                android:layout_below="@id/notificationTitle3"
+                android:layout_toRightOf="@id/notificationIcon3"
+                style="@style/notificationDetailsMiniText" />
+        </RelativeLayout>
+
+        <View style="@style/notificationDetailsView" />
+
+        <!-- Example Notification Item 4 -->
+        <RelativeLayout style="@style/notificationDetailsLayout">
+
+            <ImageView
+                android:id="@+id/notificationIcon4"
+                style="@style/notificationDetailsImage"
+                android:src="@drawable/nav" />
+
+            <TextView
+                android:id="@+id/notificationTitle4"
+                android:text="New Message"
+                android:layout_toRightOf="@id/notificationIcon4"
+                style="@style/notificationDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/notificationTime4"
+                android:text="5 hours ago"
+                android:layout_below="@id/notificationTitle4"
+                android:layout_toRightOf="@id/notificationIcon4"
+                style="@style/notificationDetailsMiniText" />
+        </RelativeLayout>
+
+        <View style="@style/notificationDetailsView" />
+
+        <!-- Repeat the above block for more notifications with unique IDs -->
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

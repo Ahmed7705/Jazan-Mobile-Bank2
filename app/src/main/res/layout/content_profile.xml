@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ProfileActivity"
+    tools:showIn="@layout/activity_profile">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_marginTop="20dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp">
+
+    <RelativeLayout style="@style/profileDetailsLayout">
+      <ImageView
+          android:id="@+id/nameImageView"
+          android:src="@drawable/girl"
+          style="@style/profileDetailsImage" />
+
+      <TextView
+          android:id="@+id/nameTextView"
+          style="@style/profileDetailsTextMain"
+          android:layout_toRightOf="@id/nameImageView"
+          android:text="Name:Samah Ahmad" />
+
+      <TextView
+          style="@style/profileDetailsMiniText"
+          android:layout_toRightOf="@id/nameImageView"
+          android:text="ID: 202204093" />
+
+    </RelativeLayout>
+
+    <View style="@style/proifleDetailsView" />
+
+    <RelativeLayout style="@style/profileDetailsLayout">
+      <ImageView
+          android:id="@+id/emailImageView"
+          android:src="@drawable/girl"
+          style="@style/profileDetailsImage" />
+
+      <TextView
+          style="@style/profileDetailsTextMain"
+          android:layout_toRightOf="@id/emailImageView"
+          android:text="Name:Badria yahya" />
+
+      <TextView
+          style="@style/profileDetailsMiniText"
+          android:layout_toRightOf="@id/emailImageView"
+          android:text="ID: 202306642" />
+
+    </RelativeLayout>
+
+    <View style="@style/proifleDetailsView" />
+
+    <RelativeLayout style="@style/profileDetailsLayout">
+      <ImageView
+          android:id="@+id/dobImageView"
+          android:src="@drawable/girl"
+          style="@style/profileDetailsImage" />
+
+      <TextView
+          style="@style/profileDetailsTextMain"
+          android:layout_toRightOf="@id/dobImageView"
+          android:text="Name:Khlood Shawani" />
+
+      <TextView
+          style="@style/profileDetailsMiniText"
+          android:layout_toRightOf="@id/dobImageView"
+          android:text="ID: 202208441" />
+
+    </RelativeLayout>
+
+    <View style="@style/proifleDetailsView" />
+
+    <RelativeLayout style="@style/profileDetailsLayout">
+      <ImageView
+          android:id="@+id/dobImageView"
+          android:src="@drawable/girl"
+          style="@style/profileDetailsImage" />
+
+      <TextView
+          style="@style/profileDetailsTextMain"
+          android:layout_toRightOf="@id/dobImageView"
+          android:text="Name:Alanood mshhoor" />
+
+      <TextView
+          style="@style/profileDetailsMiniText"
+          android:layout_toRightOf="@id/dobImageView"
+          android:text="ID: 201806844" />
+
+    </RelativeLayout>
+
+  </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
